@@ -28,7 +28,7 @@ export default function Contact() {
     {
       icon: Mail,
       title: "Email Us",
-      content: "hello@eternalmoments.com",
+      content: "hello@kathacreations.com",
       description: "Response within 24 hours",
       color: "from-purple-500 to-pink-500"
     },
