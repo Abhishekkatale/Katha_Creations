@@ -25,8 +25,8 @@ export default function Services() {
     {
       name: "Essential",
       subtitle: "Perfect Start",
-      price: 2500,
-      originalPrice: 2800,
+      price: 25000,
+      originalPrice: 28000,
       duration: "4-6 Hours Coverage",
       icon: Heart,
       color: "from-pink-400 to-rose-500",
@@ -38,15 +38,15 @@ export default function Services() {
         "Basic Color Grading",
         "Online Viewing Gallery"
       ],
-      addOns: ["Drone Footage (+$300)", "Extra Hour (+$200)"],
+      addOns: ["Drone Footage (+₹3000)", "Extra Hour (+₹2000)"],
       isPopular: false,
       bestFor: "Intimate ceremonies, budget-conscious couples"
     },
     {
       name: "Premium",
       subtitle: "Most Loved",
-      price: 4200,
-      originalPrice: 4800,
+      price: 42000,
+      originalPrice: 48000,
       duration: "Full Day Coverage",
       icon: Crown,
       color: "from-purple-500 to-indigo-600",
@@ -60,15 +60,15 @@ export default function Services() {
         "Custom Music Selection",
         "USB Drive + Online Gallery"
       ],
-      addOns: ["Rehearsal Coverage (+$500)", "Raw Footage (+$400)"],
+      addOns: ["Rehearsal Coverage (+₹5000)", "Raw Footage (+₹4000)"],
       isPopular: true,
       bestFor: "Complete wedding experience, standard celebrations"
     },
     {
       name: "Luxury",
       subtitle: "Ultimate Experience",
-      price: 6500,
-      originalPrice: 7200,
+      price: 65000,
+      originalPrice: 72000,
       duration: "Multi-Day Experience",
       icon: Sparkles,
       color: "from-amber-400 to-orange-500",
@@ -82,17 +82,17 @@ export default function Services() {
         "Professional Audio Recording",
         "Bonus Engagement Session"
       ],
-      addOns: ["Documentary Style (+$800)", "Additional Events (+$600)"],
+      addOns: ["Documentary Style (+₹8000)", "Additional Events (+₹6000)"],
       isPopular: false,
       bestFor: "Luxury weddings, destination celebrations"
     },
   ];
 
   const addOnServices = [
-    { name: "Engagement Session", price: 800, icon: Heart },
-    { name: "Drone Cinematography", price: 500, icon: Camera },
-    { name: "Live Streaming", price: 600, icon: Video },
-    { name: "Same Day Edit", price: 1200, icon: Clock }
+    { name: "Engagement Session", price: 8000, icon: Heart },
+    { name: "Drone Cinematography", price: 5000, icon: Camera },
+    { name: "Live Streaming", price: 6000, icon: Video },
+    { name: "Same Day Edit", price: 12000, icon: Clock }
   ];
 
   return (
@@ -191,14 +191,14 @@ export default function Services() {
                       <div className="mt-4">
                         <div className="flex items-center justify-center gap-2 mb-1">
                           <span className={`text-lg line-through ${pkg.isPopular ? 'text-white/50' : 'text-slate-400'}`}>
-                            ${pkg.originalPrice.toLocaleString()}
+                            ₹{pkg.originalPrice.toLocaleString('en-IN')}
                           </span>
                           <span className="bg-red-500 text-white px-2 py-1 rounded text-xs font-bold">
-                            SAVE ${(pkg.originalPrice - pkg.price).toLocaleString()}
+                            SAVE ₹{(pkg.originalPrice - pkg.price).toLocaleString('en-IN')}
                           </span>
                         </div>
                         <div className={`text-4xl font-bold bg-gradient-to-r ${pkg.color} bg-clip-text text-transparent`}>
-                          ${pkg.price.toLocaleString()}
+                          ₹{pkg.price.toLocaleString('en-IN')}
                         </div>
                         <p className={`text-sm mt-1 ${pkg.isPopular ? 'text-white/70' : 'text-slate-500'}`}>
                           {pkg.duration}
@@ -292,7 +292,7 @@ export default function Services() {
                       <IconComponent className="w-6 h-6 text-white" />
                     </div>
                     <h4 className="font-semibold text-slate-800 mb-2">{service.name}</h4>
-                    <p className="text-2xl font-bold text-purple-600">${service.price}</p>
+                    <p className="text-2xl font-bold text-purple-600">₹{service.price.toLocaleString('en-IN')}</p>
                   </div>
                 </div>
               );
