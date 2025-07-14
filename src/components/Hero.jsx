@@ -6,9 +6,13 @@ export default function WeddingHero() {
   const [isVisible, setIsVisible] = useState(false);
 
   const backgroundImages = [
-    "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080&q=80",
-    "https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080&q=80",
-    "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080&q=80"
+    "https://res.cloudinary.com/dutlotmmd/image/upload/v1752475946/iqcup3hjqpinaoi02x4g.jpg",
+    "https://res.cloudinary.com/dutlotmmd/image/upload/v1752475974/zd0zsm4daabvgmqsd7qe.jpg",
+    "https://res.cloudinary.com/dutlotmmd/image/upload/v1752476019/oylwumu3kp6j0ycrp5zx.jpg",
+    "https://res.cloudinary.com/dutlotmmd/image/upload/v1752476055/ag4uobvbbfnkgpodfjlw.jpg",
+    "https://res.cloudinary.com/dutlotmmd/image/upload/v1752476089/g1xme11pl4jx5xfy4ppy.jpg",
+    "https://res.cloudinary.com/dutlotmmd/image/upload/v1752476125/rqu6j6alorptek2d24wm.jpg",
+    "https://res.cloudinary.com/dutlotmmd/image/upload/v1752476263/mnr4fdw1hira13xb65ap.jpg"
   ];
 
   useEffect(() => {
@@ -62,79 +66,23 @@ export default function WeddingHero() {
         <div className={`transform transition-all duration-1000 ${
           isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
         }`}>
-          {/* Subtitle */}
-          <div className="mb-6">
-            <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium border border-white/20">
-              ✨ Premium Wedding Cinematography
-            </span>
-          </div>
+        
 
           {/* Main Heading */}
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-            Capturing Love's
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+              Katha Creations
             <br />
             <span className="bg-gradient-to-r from-rose-400 via-pink-400 to-rose-500 bg-clip-text text-transparent">
-              Katha Creations
             </span>
           </h1>
 
-          {/* Description */}
-          <p className="text-lg md:text-xl lg:text-2xl mb-8 opacity-90 max-w-3xl mx-auto leading-relaxed font-light">
-            We create cinematic masterpieces that tell your unique love story with 
-            <span className="text-rose-300 font-medium"> elegance, artistry, and timeless beauty</span>
-          </p>
-
-          {/* Stats */}
-          <div className="flex justify-center space-x-8 mb-10 text-sm md:text-base">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-rose-300">500+</div>
-              <div className="opacity-80">Weddings Filmed</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-rose-300">5★</div>
-              <div className="opacity-80">Average Rating</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-rose-300">8+</div>
-              <div className="opacity-80">Years Experience</div>
-            </div>
-          </div>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button
-              onClick={() => scrollToSection("portfolio")}
-              className="group bg-gradient-to-r from-rose-500 to-pink-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-rose-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center space-x-2"
-            >
-              <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
-              <span>Watch Our Films</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-            
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="group bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-800 transition-all duration-300 transform hover:scale-105 flex items-center space-x-2"
-            >
-              <Heart className="w-5 h-5 group-hover:scale-110 transition-transform" />
-              <span>Start Your Story</span>
-            </button>
-          </div>
-
-          {/* Trust Indicators */}
-          <div className="mt-12 flex justify-center items-center space-x-6 opacity-70">
-            <span className="text-sm">Featured in:</span>
-            <div className="flex space-x-4 text-xs">
-              <span className="px-3 py-1 bg-white/10 rounded-full">Wedding Wire</span>
-              <span className="px-3 py-1 bg-white/10 rounded-full">The Knot</span>
-              <span className="px-3 py-1 bg-white/10 rounded-full">Brides Magazine</span>
-            </div>
-          </div>
+        
+         
         </div>
       </div>
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center">
-        <div className="text-white/70 text-sm mb-2">Discover More</div>
         <ChevronDown className="w-6 h-6 text-white/70 animate-bounce mx-auto cursor-pointer hover:text-white transition-colors" 
                      onClick={() => scrollToSection("about")} />
       </div>
