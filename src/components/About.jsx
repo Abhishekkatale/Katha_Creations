@@ -6,16 +6,17 @@ export default function About() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = [
-    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-    "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    "https://images.unsplash.com/photo-1606800052052-a08af7148866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+    "https://res.cloudinary.com/dutlotmmd/image/upload/v1752748677/bmd9icdi1bnysizoj2m9.jpg",
+    "https://res.cloudinary.com/dutlotmmd/image/upload/v1752748691/q6a3inivtzoyenj7zltg.jpg",
+    "https://res.cloudinary.com/dutlotmmd/image/upload/v1752748704/vc9slip5ndmidigflyo1.jpg",
+    "https://res.cloudinary.com/dutlotmmd/image/upload/v1752748717/axf1v6oaom6sdscallqt.jpg"
   ];
 
   const stats = [
-    { number: "250+", label: "Weddings Filmed", icon: Camera, color: "from-rose-500 to-pink-600" },
-    { number: "12", label: "Years Experience", icon: Award, color: "from-blue-500 to-purple-600" },
-    { number: "98%", label: "Client Satisfaction", icon: Heart, color: "from-green-500 to-teal-600" },
-    { number: "50+", label: "Awards Won", icon: Users, color: "from-yellow-500 to-orange-600" }
+    { number: "150+", label: "Weddings Filmed", icon: Camera, color: "from-rose-500 to-pink-600" },
+    { number: "10", label: "Years Experience", icon: Award, color: "from-blue-500 to-purple-600" },
+    { number: "100%", label: "Client Satisfaction", icon: Heart, color: "from-green-500 to-teal-600" },
+    { number: "20+", label: "Team Members", icon: Users, color: "from-yellow-500 to-orange-600" }
   ];
 
   useEffect(() => {
@@ -115,16 +116,9 @@ export default function About() {
             {/* Description */}
             <div className="space-y-6">
               <p className="text-lg text-slate-700 leading-relaxed">
-                With over a decade of experience capturing love stories, we believe every wedding is a 
-                unique masterpiece waiting to be told. Our approach combines 
-                <span className="font-semibold text-slate-800"> cinematic artistry</span> with 
-                authentic storytelling to create films that become treasured family heirlooms.
+                At  <span className="font-semibold text-rose-600">Katha Creations</span>,  our mission is to tell real stories through our cameras. For over 10 years, we’ve been capturing not just photos, but feelings, the laughter, the happy tears, and all the special little moments that make your big day truly yours. Every couple has a story, and we make sure it’s told beautifully, honestly, and from the heart.
               </p>
-              <p className="text-lg text-slate-700 leading-relaxed">
-                We specialize in <span className="font-semibold text-rose-600">luxury wedding cinematography</span>, 
-                working with couples who value exceptional quality and timeless elegance. From intimate 
-                ceremonies to grand celebrations, we capture the essence of your special day.
-              </p>
+            
             </div>
 
             {/* Stats Grid */}

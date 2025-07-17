@@ -190,7 +190,7 @@ export default function Testimonials() {
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
           <div className="text-center group">
             <div className="text-4xl font-bold bg-gradient-to-r from-rose-500 to-pink-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
-              500+
+              150+
             </div>
             <div className="text-slate-600">Happy Couples</div>
           </div>
@@ -202,7 +202,7 @@ export default function Testimonials() {
           </div>
           <div className="text-center group">
             <div className="text-4xl font-bold bg-gradient-to-r from-green-500 to-teal-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
-              3
+              10
             </div>
             <div className="text-slate-600">Years Experience</div>
           </div>

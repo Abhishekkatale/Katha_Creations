@@ -109,7 +109,7 @@ export default function Services() {
         <div className={`text-center mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-100 to-rose-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
             <Video className="w-4 h-4" />
-            Wedding Packages
+            Wedding and Pre Wedding Packages
           </div>
           
           <h2 className="text-5xl md:text-6xl font-bold text-slate-800 mb-6 leading-tight">
@@ -235,23 +235,7 @@ export default function Services() {
                       </p>
                     </div>
 
-                    {/* Add-ons */}
-                    <div className="mb-6">
-                      <p className={`text-xs font-medium mb-2 ${
-                        pkg.isPopular ? 'text-white/70' : 'text-slate-500'
-                      }`}>
-                        POPULAR ADD-ONS
-                      </p>
-                      <div className="space-y-1">
-                        {pkg.addOns.map((addon, addonIndex) => (
-                          <p key={addonIndex} className={`text-xs ${
-                            pkg.isPopular ? 'text-white/60' : 'text-slate-400'
-                          }`}>
-                            + {addon}
-                          </p>
-                        ))}
-                      </div>
-                    </div>
+                   
 
                     {/* Button */}
                     <button
@@ -272,34 +256,7 @@ export default function Services() {
           })}
         </div>
 
-        {/* Add-on Services */}
-        <div className="max-w-4xl mx-auto mb-16">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-slate-800 mb-4">Additional Services</h3>
-            <p className="text-slate-600">Enhance your package with these premium add-ons</p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {addOnServices.map((service, index) => {
-              const IconComponent = service.icon;
-              return (
-                <div
-                  key={index}
-                  className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-slate-100"
-                >
-                  <div className="text-center">
-                    <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-rose-500 mb-4">
-                      <IconComponent className="w-6 h-6 text-white" />
-                    </div>
-                    <h4 className="font-semibold text-slate-800 mb-2">{service.name}</h4>
-                    <p className="text-2xl font-bold text-purple-600">₹{service.price.toLocaleString('en-IN')}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
+       
       
        
       </div>
