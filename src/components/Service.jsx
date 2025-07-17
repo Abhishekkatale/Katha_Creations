@@ -23,68 +23,122 @@ export default function Services() {
 
   const packages = [
     {
-      name: "Essential",
-      subtitle: "Perfect Start",
-      price: 25000,
-      originalPrice: 28000,
-      duration: "4-6 Hours Coverage",
+      name: "Essential Pre-Wedding Package",
+      subtitle: "Basic Pre-Wedding Package",
+      price: 15000,
+      originalPrice: 18000,
+      duration: "1-minute cinematic video",
       icon: Heart,
       color: "from-pink-400 to-rose-500",
       features: [
-        "Ceremony & Reception Highlights",
-        "3-5 Minute Highlight Film",
-        "Digital Gallery Delivery", 
-        "One Professional Videographer",
-        "Basic Color Grading",
-        "Online Viewing Gallery"
+        "20–30 edited photos",
+        "Save the Date photos",
+        "Save the Date video",
+        "Basic props (umbrella, flowers, etc.)"
       ],
-      addOns: ["Drone Footage (+₹3000)", "Extra Hour (+₹2000)"],
+      addOns: [],
       isPopular: false,
-      bestFor: "Intimate ceremonies, budget-conscious couples"
+      bestFor: "Couples seeking a simple, memorable shoot"
     },
     {
-      name: "Premium",
-      subtitle: "Most Loved",
-      price: 42000,
-      originalPrice: 48000,
-      duration: "Full Day Coverage",
+      name: "Premium Pre-Wedding Package",
+      subtitle: "Premium Pre-Wedding Package",
+      price: 25000,
+      originalPrice: 25000,
+      duration: "2–3 minute cinematic video",
       icon: Crown,
       color: "from-purple-500 to-indigo-600",
       features: [
-        "Complete Wedding Day Coverage",
-        "6-8 Minute Cinematic Film",
-        "Ceremony & Reception Edit",
-        "Two Professional Videographers",
-        "Drone Footage (Weather Permitting)",
-        "Premium Color Grading",
-        "Custom Music Selection",
-        "USB Drive + Online Gallery"
+        "Drone shots included",
+        "40–50 edited photos",
+        "Save the Date content",
+        "Location guidance + concept planning",
+        "Props + outfit suggestions"
       ],
-      addOns: ["Rehearsal Coverage (+₹5000)", "Raw Footage (+₹4000)"],
+      addOns: [],
       isPopular: true,
-      bestFor: "Complete wedding experience, standard celebrations"
+      bestFor: "Couples wanting creative planning and drone shots"
     },
     {
-      name: "Luxury",
-      subtitle: "Ultimate Experience",
-      price: 65000,
-      originalPrice: 72000,
-      duration: "Multi-Day Experience",
+      name: "Luxury Pre-Wedding Package",
+      subtitle: "Luxury Pre-Wedding Package",
+      price: 45000,
+      originalPrice: 45000,
+      duration: "3–5 minute cinematic video",
       icon: Sparkles,
       color: "from-amber-400 to-orange-500",
       features: [
-        "Rehearsal + Wedding Day Coverage",
-        "10-12 Minute Feature Film",
-        "Three Professional Videographers",
-        "Premium Drone Package",
-        "Custom USB + Online Gallery",
-        "Same-Day Highlight Reel",
-        "Professional Audio Recording",
-        "Bonus Engagement Session"
+        "Drone shots + slow-motion highlights",
+        "60+ premium edited photos",
+        "Save the Date content",
+        "Professional makeup & hair stylist",
+        "Conceptual shoot planning",
+        "Assistance with outfit & styling",
+        "Premium props and setups"
       ],
-      addOns: ["Documentary Style (+₹8000)", "Additional Events (+₹6000)"],
+      addOns: [],
       isPopular: false,
-      bestFor: "Luxury weddings, destination celebrations"
+      bestFor: "Couples seeking a luxury, fully styled shoot"
+    },
+    {
+      name: "Basic Wedding Package",
+      subtitle: "Basic Wedding Package",
+      price: 80000,
+      originalPrice: 80000,
+      duration: "2–3 minute wedding highlight video",
+      icon: Gift,
+      color: "from-blue-400 to-blue-600",
+      features: [
+        "150+ edited photos",
+        "Candid + traditional photography",
+        "Basic reel edits for social media",
+        "Same day edit available"
+      ],
+      addOns: [],
+      isPopular: false,
+      bestFor: "Small weddings, basic coverage"
+    },
+    {
+      name: "Premium Wedding Package",
+      subtitle: "Premium Wedding Package",
+      price: 150000,
+      originalPrice: 150000,
+      duration: "2-day coverage (wedding + haldi/sangeet/mehendi)",
+      icon: Star,
+      color: "from-yellow-400 to-amber-500",
+      features: [
+        "3–5 minute cinematic highlight video",
+        "Drone footage included",
+        "300+ edited photos",
+        "Candid, traditional, and couple portraits",
+        "2 Instagram reel edits",
+        "Family interviews or messages section"
+      ],
+      addOns: [],
+      isPopular: true,
+      bestFor: "Weddings with multiple functions and creative edits"
+    },
+    {
+      name: "Royal Wedding Package",
+      subtitle: "Royal Wedding Package",
+      price: 250000,
+      originalPrice: 250000,
+      duration: "3-day full wedding coverage (pre-wedding + all functions)",
+      icon: Sparkles,
+      color: "from-amber-400 to-orange-500",
+      features: [
+        "6–8 minute cinematic wedding film",
+        "Drone + gimbal coverage",
+        "500+ professionally edited photos",
+        "Professional makeup and styling support for bride & groom",
+        "Album (premium quality, 50+ pages)",
+        "4 cinematic reels for Instagram",
+        "Behind-the-scenes (BTS) coverage",
+        "End-to-end creative direction & storytelling"
+      ],
+      addOns: [],
+      isPopular: false,
+      bestFor: "Grand weddings, full creative direction"
     },
   ];
 
@@ -189,14 +243,7 @@ export default function Services() {
                       </p>
                       
                       <div className="mt-4">
-                        <div className="flex items-center justify-center gap-2 mb-1">
-                          <span className={`text-lg line-through ${pkg.isPopular ? 'text-white/50' : 'text-slate-400'}`}>
-                            ₹{pkg.originalPrice.toLocaleString('en-IN')}
-                          </span>
-                          <span className="bg-red-500 text-white px-2 py-1 rounded text-xs font-bold">
-                            SAVE ₹{(pkg.originalPrice - pkg.price).toLocaleString('en-IN')}
-                          </span>
-                        </div>
+                        
                         <div className={`text-4xl font-bold bg-gradient-to-r ${pkg.color} bg-clip-text text-transparent`}>
                           ₹{pkg.price.toLocaleString('en-IN')}
                         </div>

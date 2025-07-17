@@ -7,52 +7,100 @@ export default function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      names: "Jessica & Ryan",
-      content: "katha Creations captured our wedding day so beautifully. Every time we watch our film, we're transported back to that magical day. The attention to detail and artistic vision exceeded all our expectations.",
+      names: "Aarti & Rohan",
+      content: "The best decision we made for our wedding! Katha Creations beautifully captured every emotion and ritual. The teaser had us in tears!",
       rating: 5,
-      date: "September 2023",
+      date: "Pune | March 2024",
       imageUrl: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
     },
     {
       id: 2,
-      names: "Maria & Carlos",
-      content: "Professional, creative, and incredibly talented. The team made us feel so comfortable throughout the entire process. Our wedding film is a masterpiece that we'll cherish forever.",
-      rating: 5,
-      date: "August 2023",
+      names: "Sneha & Harsh",
+      content: "Very professional team. We loved the final video and the drone shots were a great touch. Just wished delivery was a bit quicker.",
+      rating: 4,
+      date: "Nashik | November 2023",
       imageUrl: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
     },
     {
       id: 3,
-      names: "Amanda & Steven",
-      content: "From the initial consultation to the final delivery, everything was seamless. The quality of work and professionalism is unmatched. Highly recommend for any couple wanting cinematic perfection.",
+      names: "Pooja & Kunal",
+      content: "From Haldi to Reception, everything was filmed so beautifully. The highlight reel felt straight out of a movie. Highly recommend!",
       rating: 5,
-      date: "October 2023",
+      date: "Mumbai | January 2024",
       imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
     },
     {
       id: 4,
-      names: "Sarah & Michael",
-      content: "Beyond our wildest dreams! The way they captured every emotion, every laugh, every tear - it's pure magic. Our families still get emotional watching our wedding film.",
-      rating: 5,
-      date: "November 2023",
+      names: "Mansi & Ayush",
+      content: "Loved the candid moments they captured. Our families keep watching the trailer again and again!",
+      rating: 4,
+      date: "Navi Mumbai | October 2023",
       imageUrl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
     },
     {
       id: 5,
-      names: "Emma & David",
-      content: "Choosing Katha Creations was the best decision we made for our wedding. The cinematic quality and storytelling approach made our special day feel like a Hollywood romance.",
+      names: "Shruti & Aditya",
+      content: "Katha Creations felt like family. They understood our story and made it come alive visually. Every shot felt magical!",
       rating: 5,
-      date: "December 2023",
+      date: "Hyderabad | February 2024",
       imageUrl: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
     },
     {
       id: 6,
-      names: "Lisa & James",
-      content: "Absolutely phenomenal work! They captured moments we didn't even know happened. The final film was so beautiful it brought everyone to tears. Worth every penny and more.",
-      rating: 5,
-      date: "January 2024",
+      names: "Payal & Ritesh",
+      content: "Decent experience overall. Photos were amazing but we expected a bit more cinematic approach in the final video.",
+      rating: 3,
+      date: "Ahmedabad | August 2023",
       imageUrl: "https://images.unsplash.com/photo-1494790108755-2616c25ca5b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
-    }
+    },
+    {
+      id: 7,
+      names: "Tanvi & Nikhil",
+      content: "The team was so cooperative during our destination wedding. Loved the natural style of shooting. Truly storytellers!",
+      rating: 5,
+      date: "Goa | December 2023",
+      imageUrl: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    },
+    {
+      id: 8,
+      names: "Neha & Pratik",
+      content: "Katha Creations gave us memories that we’ll cherish forever. Everything was perfect, just some delay in raw data handover.",
+      rating: 4,
+      date: "Satara | April 2024",
+      imageUrl: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    },
+    {
+      id: 9,
+      names: "Divya & Manan",
+      content: "Our wedding felt like a film! The teaser, trailer, and full video were edited so creatively. Friends keep asking who shot it!",
+      rating: 5,
+      date: "Surat | May 2024",
+      imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    },
+    {
+      id: 10,
+      names: "Jaya & Raj",
+      content: "Photos turned out lovely, but we felt the highlight video could have used better music syncing. Otherwise great work!",
+      rating: 3,
+      date: "Nagpur | July 2023",
+      imageUrl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    },
+    {
+      id: 11,
+      names: "Ishita & Varun",
+      content: "If you want your story told with heart, go with Katha Creations. So much emotion captured so naturally.",
+      rating: 5,
+      date: "Bangalore | June 2024",
+      imageUrl: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    },
+    {
+      id: 12,
+      names: "Ritika & Sameer",
+      content: "Very responsive team and easy to work with. Got lots of content for social media too. Thanks, Katha team!",
+      rating: 4,
+      date: "Thane | February 2023",
+      imageUrl: "https://images.unsplash.com/photo-1494790108755-2616c25ca5b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100",
+    },
   ];
 
   const nextTestimonial = () => {
@@ -190,7 +238,7 @@ export default function Testimonials() {
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
           <div className="text-center group">
             <div className="text-4xl font-bold bg-gradient-to-r from-rose-500 to-pink-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
-              150+
+              500+
             </div>
             <div className="text-slate-600">Happy Couples</div>
           </div>
