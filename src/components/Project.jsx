@@ -15,7 +15,7 @@ export default function Portfolio() {
   const portfolioItems = [
     {
       id: 1,
-      title: "Sarah & Michael",
+      title: "Emma & James",
       category: "ceremony",
       imageUrl: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400",
       description: "Garden Ceremony",
@@ -218,10 +218,10 @@ export default function Portfolio() {
         {/* Statistics */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto mb-16">
           {[
-            { number: "500+", label: "Weddings Captured", icon: Heart },
+            { number: "150+", label: "Weddings Captured", icon: Heart },
             { number: "50+", label: "Destinations", icon: Camera },
-            { number: "99%", label: "Happy Couples", icon: Star },
-            { number: "15+", label: "Awards Won", icon: Star }
+            { number: "100%", label: "Client Satisfaction", icon: Star },
+            { number: "10+", label: "Years Experience", icon: Star }
           ].map((stat, index) => {
             const IconComponent = stat.icon;
             return (

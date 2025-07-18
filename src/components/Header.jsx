@@ -89,7 +89,7 @@ export default function WeddingHeader() {
             {/* Contact Button & Mobile Menu */}
             <div className="flex items-center space-x-4">
               <button
-                onClick={() => scrollToSection("contact")}
+                onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeo1Yfp6w_eoSWDMMW5Vok449TZHnGT7Nlm4nMX7iAR7eNK-w/viewform?usp=sharing&ouid=102320821943705209942", "_blank")}
                 className={`hidden md:flex items-center space-x-2 px-6 py-2.5 rounded-full font-medium transition-all duration-300 transform hover:scale-105 ${
                   isScrolled
                     ? "bg-gradient-to-r from-rose-500 to-pink-600 text-white shadow-lg hover:shadow-xl"
@@ -137,7 +137,7 @@ export default function WeddingHeader() {
                   </button>
                 ))}
                 <button
-                  onClick={() => scrollToSection("contact")}
+                  onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeo1Yfp6w_eoSWDMMW5Vok449TZHnGT7Nlm4nMX7iAR7eNK-w/viewform?usp=sharing&ouid=102320821943705209942", "_blank")}
                   className="flex items-center justify-center space-x-2 bg-gradient-to-r from-rose-500 to-pink-600 text-white font-medium py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300 transform hover:scale-105 mt-4"
                 >
                   <Mail className="w-4 h-4" />

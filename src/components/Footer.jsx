@@ -110,33 +110,24 @@ export default function Footer() {
               <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-rose-400"></div>
             </h4>
             <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <MapPin className="w-4 h-4 text-rose-400 mt-1 flex-shrink-0" />
-                <div>
-                  <p className="text-slate-300 text-sm">123 Wedding Lane</p>
-                  <p className="text-slate-300 text-sm">Love City, LC 12345</p>
-                </div>
-              </div>
+              
               
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-rose-400 flex-shrink-0" />
                 <a href="tel:+1234567890" className="text-slate-300 hover:text-rose-300 transition-colors text-sm">
-                  +1 (234) 567-8900
+                  +91 82088 45449
                 </a>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-rose-400 flex-shrink-0" />
                 <a href="mailto:hello@eternalmoments.com" className="text-slate-300 hover:text-rose-300 transition-colors text-sm">
-                  hello@eternalmoments.com
+                  contact.kathacreations@gmail.com
                 </a>
               </div>
             </div>
 
-            {/* CTA Button */}
-            <button className="mt-6 bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 text-white px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105 shadow-lg">
-              Book Consultation
-            </button>
+        
           </div>
         </div>
 

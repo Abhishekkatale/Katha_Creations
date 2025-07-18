@@ -284,18 +284,7 @@ export default function Services() {
 
                    
 
-                    {/* Button */}
-                    <button
-                      onClick={() => selectPackage(pkg.name.toLowerCase())}
-                      className={`w-full py-4 rounded-full font-semibold transition-all duration-300 flex items-center justify-center gap-2 group/btn ${
-                        pkg.isPopular
-                          ? 'bg-white text-slate-800 hover:bg-gray-100'
-                          : `bg-gradient-to-r ${pkg.color} text-white hover:shadow-lg`
-                      } transform hover:scale-105`}
-                    >
-                      Choose {pkg.name}
-                      <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" />
-                    </button>
+                   
                   </div>
                 </div>
               </div>
