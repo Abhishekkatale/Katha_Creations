@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Star, Quote, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Star, Quote, ChevronLeft, ChevronRight, Heart, Camera } from 'lucide-react';
 
 export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -234,32 +234,25 @@ export default function Testimonials() {
           </div>
         </div>
 
-        {/* Stats Section */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-          <div className="text-center group">
-            <div className="text-4xl font-bold bg-gradient-to-r from-rose-500 to-pink-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
-              500+
-            </div>
-            <div className="text-slate-600">Happy Couples</div>
-          </div>
-          <div className="text-center group">
-            <div className="text-4xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
-              5★
-            </div>
-            <div className="text-slate-600">Average Rating</div>
-          </div>
-          <div className="text-center group">
-            <div className="text-4xl font-bold bg-gradient-to-r from-green-500 to-teal-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
-              10
-            </div>
-            <div className="text-slate-600">Years Experience</div>
-          </div>
-          <div className="text-center group">
-            <div className="text-4xl font-bold bg-gradient-to-r from-yellow-500 to-orange-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">
-              100%
-            </div>
-            <div className="text-slate-600">Satisfaction</div>
-          </div>
+       {/* Statistics */}
+       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto mt-8 mb-4">
+          {[
+            { number: "150+", label: "Weddings Captured", icon: Heart },
+            { number: "50+", label: "Destinations", icon: Camera },
+            { number: "100%", label: "Client Satisfaction", icon: Star },
+            { number: "10+", label: "Years Experience", icon: Star }
+          ].map((stat, index) => {
+            const IconComponent = stat.icon;
+            return (
+              <div key={index} className="text-center group">
+                <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                  <IconComponent className="w-8 h-8 text-rose-500 mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
+                  <div className="text-3xl font-bold text-slate-800 mb-1">{stat.number}</div>
+                  <div className="text-slate-600 text-sm">{stat.label}</div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
