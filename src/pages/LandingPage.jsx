@@ -14,9 +14,9 @@ function LandingPage() {
     <div className="font-sans bg-[#D8DBD5]">
       <Header />
       <Hero />
-      <About />
       <Project />
       <Service />
+      <About />
       <Testimonial />
       <Contact />
       <Footer />
