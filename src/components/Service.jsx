@@ -89,6 +89,7 @@ export default function Services() {
       icon: Gift,
       color: "from-blue-400 to-blue-600",
       features: [
+        "2 photographers & 2 videographers",
         "150+ edited photos",
         "Candid + traditional photography",
         "Basic reel edits for social media",
@@ -107,6 +108,7 @@ export default function Services() {
       icon: Star,
       color: "from-yellow-400 to-amber-500",
       features: [
+        "2 photographers, 2 videographers, 1 drone!",
         "3–5 minute cinematic highlight video",
         "Drone footage included",
         "300+ edited photos",
@@ -127,6 +129,7 @@ export default function Services() {
       icon: Sparkles,
       color: "from-amber-400 to-orange-500",
       features: [
+        "2 photographers, 2 videographers, 1 drone, 1 professional make up artist and hairstylist, 1 Creative director",
         "6–8 minute cinematic wedding film",
         "Drone + gimbal coverage",
         "500+ professionally edited photos",
