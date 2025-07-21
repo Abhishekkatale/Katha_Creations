@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Heart, Phone, Mail } from "lucide-react";
+import { Menu, X, Phone, Mail } from "lucide-react";
 
 export default function WeddingHeader() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,9 +48,7 @@ export default function WeddingHeader() {
             {/* Logo */}
             <div className="flex items-center space-x-3 group cursor-pointer">
               <div className="relative">
-                <div className="w-12 h-12 bg-gradient-to-br from-rose-400 to-pink-500 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300">
-                  <Heart className="w-6 h-6 text-white fill-current animate-pulse" />
-                </div>
+                <img src={require("../assets/logo.jpg")} alt="Katha Creations Logo" className="w-12 h-12 rounded-full shadow-lg group-hover:shadow-xl transition-all duration-300 object-cover" />
                 <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-amber-300 to-orange-400 rounded-full opacity-80"></div>
               </div>
               <div>
