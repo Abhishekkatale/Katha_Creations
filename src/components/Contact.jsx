@@ -5,7 +5,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Call Us",
-    content: "+91 82088 45449",
+    content: "+91 9307846962",
     description: "Available 9 AM - 8 PM",
     color: "from-blue-500 to-cyan-500",
   },
