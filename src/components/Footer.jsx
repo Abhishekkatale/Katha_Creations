@@ -1,4 +1,4 @@
-import { Heart, Phone, Mail, MapPin, Instagram, Facebook, Youtube, Camera, Award, Users } from "lucide-react";
+import { Heart, Phone, Location, Mail, MapPin, Instagram, Facebook, Youtube, Camera, Award, Users } from "lucide-react";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -26,8 +26,9 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-rose-400 to-pink-600 rounded-full flex items-center justify-center shadow-lg">
-                <Heart className="w-6 h-6 text-white fill-current" />
+             <div className="relative">
+                <img src={require("../assets/logo.jpg")} alt="Katha Creations Logo" className="w-12 h-12 rounded-full shadow-lg group-hover:shadow-xl transition-all duration-300 object-cover" />
+                <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-amber-300 to-orange-400 rounded-full opacity-80"></div>
               </div>
               <div>
                 <h3 className="font-serif font-bold text-2xl text-white">Katha Creations</h3>
@@ -41,15 +42,10 @@ export default function Footer() {
             
             {/* Social Media Links */}
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-slate-800 hover:bg-rose-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group">
+              <a href="https://www.instagram.com/katha.creations?igsh=MTIzeWJ0eG11ZTduOA==" className="w-10 h-10 bg-slate-800 hover:bg-rose-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group">
                 <Instagram className="w-4 h-4 text-slate-400 group-hover:text-white" />
               </a>
-              <a href="#" className="w-10 h-10 bg-slate-800 hover:bg-blue-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group">
-                <Facebook className="w-4 h-4 text-slate-400 group-hover:text-white" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-slate-800 hover:bg-red-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 group">
-                <Youtube className="w-4 h-4 text-slate-400 group-hover:text-white" />
-              </a>
+             
             </div>
           </div>
 
@@ -114,14 +110,26 @@ export default function Footer() {
               
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-rose-400 flex-shrink-0" />
-                <a href="tel:+1234567890" className="text-slate-300 hover:text-rose-300 transition-colors text-sm">
+                <a href="tel:+919307846962" className="text-slate-300 hover:text-rose-300 transition-colors text-sm">
                   +91 9307846962
                 </a>
               </div>
+
+                <div className="flex items-center space-x-3">
+          <MapPin className="w-4 h-4 text-rose-400 flex-shrink-0" />
+          <a
+            href="https://maps.app.goo.gl/R5Qyp2nKsKCNWLKN6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-300 hover:text-rose-300 transition-colors text-sm"
+          >
+            Katha Creations
+          </a>
+        </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-rose-400 flex-shrink-0" />
-                <a href="mailto:hello@eternalmoments.com" className="text-slate-300 hover:text-rose-300 transition-colors text-sm">
+                <a href="mailto:contact.kathacreations@gmail.com" className="text-slate-300 hover:text-rose-300 transition-colors text-sm">
                   contact.kathacreations@gmail.com
                 </a>
               </div>
